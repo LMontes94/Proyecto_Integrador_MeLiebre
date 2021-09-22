@@ -1,0 +1,111 @@
+main{
+    background-color:  #CBC3C1;
+    margin: auto;
+}
+
+.formregister, .formlogin{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    font-family: 'Roboto';
+    padding: 60px;
+    align-items: center;
+    margin: 10px auto 10px auto;
+}
+
+.formregister label{
+    width: 79%;
+    padding: 20px 0px 10px 0px;
+    font-weight: bold;
+}
+
+.formlogin input, .formregister input {
+    width: 80%;
+    height: 25px;
+    border-radius: 10px #d3d3d3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formlogin button,.formregister button{
+    width: 60%;
+    border-radius: 10px #d3d3d3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formregister div input, label{
+   align-self: center;
+   width: 80%;
+}
+
+.formregister-radio{
+    width: 100%;
+    display: flexbox;
+    text-align: center;
+}
+
+.formregister .formregister-radio input{
+    width: 10%;
+    height: 25px;
+    margin: 0;
+    padding: 2px;
+}
+
+.formregister .formregister-radio label{
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 5px 0px;
+}
+
+.formregister-checkbox{
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+
+.formregister .formregister-checkbox input{
+   width: 10%;
+   height: 25px;
+   margin: 0;
+}
+
+.formregister .formregister-checkbox label{
+    width: 90%;
+    height: 25px;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.formregister-button{
+   width: 100%;
+   display: flexbox;
+   flex-wrap: wrap;
+    align-self: center;
+}
+
+.formlogin button, .formregister button{
+    width: 50%;
+    color: #ffffff;
+    background-color:#6c6d74;
+    border-radius: 5px;
+}
+/*
+.formlogin button{
+   transition: background-color 0.5s,color ;
+}*/
+
+button :hover{
+   background-color: #0022AA;
+   color: #0022AA;
+}
+
+.formregister button a,.formlogin button a{
+    text-decoration: none;
+    color: #ffffff;
+}

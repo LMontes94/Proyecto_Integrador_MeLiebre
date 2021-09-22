@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header h3{
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+}
+
+.logo{
+   width: 50%;
+   margin: 0 0 5px 0;
+}
+
+form{
+   width: 50%;
+   padding: 5px;
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
+   position: relative;
+}
+
+form input{
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+form .fa-search{
+   width: 18px;
+   height: 22px;
+   background-color: #ebebeb;
+   border-radius: 5px;
+   text-align: center;
+   padding: 2px;
+   position: absolute;
+   opacity: 0.6;
+   top: 10px;
+   right: 8px;
+}
+
+nav{
+    display: none;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav  ul li{
+  list-style: none;
+}
+
+nav a{
+   text-decoration: none;
+   color: #000000;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.fa-bars{
+    color: #ffffff;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #1259c3;
+    width: 45px;
+    height: 35px;
+    margin: 7px auto 7px auto;
+    padding: 6px;
+}
+
+header div{
+    width: 100%;
+}
+
+.banner img{
+  width: 100%;
+}
+
+main{
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+main h4{
+  margin: 10px;
+}
+
+main section article{
+    width: 100%;
+    margin: 0 auto 10px auto;
+    padding: 10px;
+}
+
+main section article img{
+   width: 100%;
+}
+
+main section article div{
+    position: relative;
+}
+  
+.box-descrption{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+}
+  
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+}
+
+.titulares{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.descuento, .descripcion{
+   font-size: 16px;
+   text-align: left;
+}
+
+.descuento{
+  color: #39b54a;
+}
+
+.descripcion{
+  margin-top: 10px; 
+  display: none;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-footer{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 481px){
+    header{
+       justify-content: stretch; 
+    }
+    
+    .logo{
+        width: 35%;
+    }
+  
+    form{
+        width: 30%;
+    }
+    
+    form input{
+        width: 70%;
+        height: 20px;
+        margin: auto;
+        border-radius: 5px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    form .fa-search{
+        width: 22px;
+        height: 20px;
+        opacity: 1;
+        top: 13px;
+        right: 2px;
+        opacity: 1;
+    }    
+
+    nav{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    nav ul{
+       display: flex;
+       width: 45%;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       font-size: 12px;
+    }
+
+    .burger-menu{
+       display: none;
+    }
+    
+    main section.productos{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+
+    section.productos article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+    
+    .descripcion{
+      transition: opacity;
+    }
+
+    .descripcion :hover{
+        opacity: 0;
+    }
+}
+
+@media (min-width: 672px) {
+    form .fa-search{
+        width: 22px;
+        height: 20px;
+        opacity: 1;
+        top: 21px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    
+    section.productos article{
+        width: 20%;
+    }
+
+    form .fa-search{
+        top: 32px;
+        right: 18px;
+    }
+
+    footer section{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+   
+    footer section article{
+        width: 30%;
+    }
+    
+    footer section article h4{
+        font-size: 14px;
+    }
+    
+    footer section article p{
+        font-size: 10px;
+    }
+
+    .icon-footer{
+       width: 32px;
+       height: 32px;
+    }
+    
+    footer section article.copyright{
+        width: 100%;
+    }
+
+    footer section article.copyright h4{
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+    }
+}
